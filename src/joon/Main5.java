@@ -29,7 +29,7 @@ public class Main5 {
 	public static String solution(String str) {
 		
 		String answer = "";		
-		
+		/*
 		char [] s  = str.toCharArray();
 		
 		int lt = 0;
@@ -49,7 +49,7 @@ public class Main5 {
 		}
 		
 		answer = String.valueOf(s);
-		
+		*/
 		/*
 		char a[] = str.toCharArray();
 		
@@ -69,6 +69,26 @@ public class Main5 {
 			
 		}
 		*/
+		
+		char a [] = str.toCharArray();
+		
+		int lt = 0;
+		int rt = str.length()-1; 
+		
+		while(lt<rt) {
+			/*
+			if(Character.isAlphabetic(a[lt]) && Character.isAlphabetic(a[rt])) {
+				char tmp = a[lt];
+				a[lt] = a[rt];
+				a[rt] = tmp;
+			} 
+			lt++;
+			rt--;
+			*/
+			if(!Character.isAlphabetic(a[lt])) lt++;
+		}
+		
+		answer = String.valueOf(a);
 		
 		return answer;
 	}
