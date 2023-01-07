@@ -20,7 +20,7 @@ public class Main8_4 {
 
 				DFS(L+1);
 				
-			}
+			} 
 			
 		}
 	}
